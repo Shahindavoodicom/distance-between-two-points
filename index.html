@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Distance Visualization with Snap Feature</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #container {
+            display: flex;
+            align-items: center;
+        }
+
+        canvas {
+            border: 1px solid black;
+            margin: 0 20px;
+        }
+
+        #distanceFormula {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+
+        #pythagoreanText {
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <canvas id="myCanvas" width="500" height="500"></canvas>
+        <img src="pic.webp" alt="Description of image" width="800" height="500" />
+    </div>
+    <div id="distanceFormula">
+        Distance Formula: d = √((x<sub>2</sub> - x<sub>1</sub>)<sup>2</sup> + (y<sub>2</sub> -
+        y<sub>1</sub>)<sup>2</sup>)
+    </div>
+    <div id="pythagoreanText">
+        Pythagorean Theorem: Proven by Pythagoras
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
